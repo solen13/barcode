@@ -6,7 +6,7 @@
     "build": "nuxt build",
     "dev": "nuxt dev --host",
     "generate": "nuxt generate",
-    "netlify:build": "nuxt generate && rm -rf dist && cp -R .output/public dist",
+    "netlify:build": "NITRO_PRESET=netlify-static nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
